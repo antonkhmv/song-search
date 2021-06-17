@@ -3,12 +3,37 @@
 Поисковая система для нахождения песен по загаловку, автору и содержанию
 
 Фильтрует песни по соответствию содержания запроса и ранжирует подходящие результаты по релевантности. 
-Для решения я использовал схожесть эмбеддингов текста песен с запросом через consine_simularity -- word2vec для заголовков и автора песни и tdf-idf  для текста песни (для фильтрации - составил обратный индекс).
 
-![img1](https://github.com/antonkhmv/song-search/tree/main/imgs/1.jpg)
+Для решения я использовал схожесть эмбеддингов текста песен с запросом через
 
-![img2](https://github.com/antonkhmv/song-search/tree/main/imgs/2.jpg)
+* для фильтрации - составил обратный индекс
 
-![img3](https://github.com/antonkhmv/song-search/tree/main/imgs/3.jpg)
+* word2vec для заголовков и автора песни и consine_simularity для score
 
-![img4](https://github.com/antonkhmv/song-search/tree/main/imgs/4.jpg)
+* tdf-idf  для текста песни
+
+# Скриншоты
+
+![img1](imgs/1.jpg)
+
+![img2](imgs/2.jpg)
+
+![img2](imgs/3.jpg)
+
+![img2](imgs/4.jpg)
+
+# Запуск
+
+Для работы небобходимо установить Python 3 
+
+Запускать с помощью комманды
+
+python "$install-path$/server.py"
+
+где $install-path$ - путь к файлу server.py
+
+открывается сервер на loacalhost, чтобы подключится к нему необходимо ввести в строку браузера сообщение из консоли
+
+"Running on ..."
+
+![img5](imgs/5.png)
